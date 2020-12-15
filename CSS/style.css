@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+html {
+    min-width: 1230px;
+}
+
+body {
+    font-size: 12px;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    color: #333333;
+    background: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form, img, p, div, body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style-type: none;
+}
+
+em, i, u {
+    font-style: normal;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #29297c;
+    text-decoration: none;
+}
+
+.none, .hide {
+    display: none !important;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+* + html .clearfix {
+    height: 1%;
+}
+
+/*英文强制换行*/
+.word {
+    word-break: break-all;
+}
+
+.inputText {
+    border: 1px solid #ddd;
+    padding: 6px 8px;
+    background-color: transparent;
+}
+
+/*滚动条*/
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #999;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/*页面留白*/
+.blank, .blank10 {
+    height: 10px;
+    line-height: 10px;
+    clear: both;
+    visibility: hidden;
+}
+
+/*布局*/
+.block {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*表格细线*/
+.tb1 {
+    border-collapse: collapse;
+}
+
+.tb1 td, .tb1 th {
+    background: white;
+    padding: 5px 10px;
+    border: 1px solid #DDD;
+}

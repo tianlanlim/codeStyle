@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>前端代码风格展示</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../JS/jquery.min.js"></script>
+</head>
+<body>
+    <div class="block">
+        <h1 class="demo_title">前端代码风格展示</h1>
+        <div class="blank"></div>
+        <div class="tab_box">
+            <ul>
+                <li class="on">选项1</li>
+                <li>选项2</li>
+                <li>选项3</li>
+            </ul>
+            <div class="content">
+                <div class="item">这里是选项1的内容</div>
+                <div class="item none">这里是选项2的内容</div>
+                <div class="item none">这里是选项3的内容</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $(".tab_box ul li").on('click', function () {
+                if(!$(this).hasClass("on")){
+                    $(".tab_box ul li").removeClass("on");
+                    $(this).addClass("on");
+                    $(".tab_box .content .item").addClass("none");
+                    $(".tab_box .content .item").eq($(this).index()).removeClass("none");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
