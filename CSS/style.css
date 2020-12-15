@@ -109,3 +109,46 @@ a:hover {
     padding: 5px 10px;
     border: 1px solid #DDD;
 }
+
+/* 标题 */
+.demo_title{
+    padding: 20px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* 选项卡 */
+.tab_box{
+    overflow: hidden;
+}
+.tab_box ul{
+    width: 100%;
+    overflow: hidden;
+}
+.tab_box ul li{
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    margin-right:20px;
+    padding: 0 15px;
+    font-size: 14px;
+    overflow: hidden;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+}
+.tab_box ul li.on{
+    color: red;
+    border-color: red;
+}
+.tab_box .content{
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.tab_box .content .item{
+    padding: 15px;
+    border: 1px solid #dddddd;
+    line-height: 150%;
+    overflow: hidden;
+}
+
